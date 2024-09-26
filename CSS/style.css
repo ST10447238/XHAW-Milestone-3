@@ -1,0 +1,551 @@
+body {
+    font-family: "Inter", sans-serif; 
+    margin: 0;
+}
+
+.course-img{
+    align-items: center;
+}
+
+.course:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /*Youtube*/
+}
+
+.course {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.AboutUs{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px; 
+    background-color: rgb(216, 255, 218); 
+    border-radius: 8px;
+}
+.AboutUs h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2D452B;
+}
+
+.AboutUs img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.SignIn{
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+img {
+    height: 150px; 
+    width: auto;
+}
+
+.container {
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+svg {
+    width: 30px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+header .icon-cart {
+    position: relative;
+    cursor: pointer;
+}
+
+header .icon-cart span {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+}
+
+.title {
+    font-size: 44.55px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+.Green {
+    color: #4CAF4F;
+}
+
+.listProduct .item img {
+    width: 90%;
+}
+
+.listProduct {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.listProduct .item {
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.listProduct .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.listProduct .item .price {
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+.listProduct .item button {
+    background-color: #353432;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.cartTab {
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+
+body.showCart .cartTab {
+    inset: 0 0 0 auto;
+}
+
+body.showCart .container {
+    transform: translateX(-250px);
+}
+
+.cartTab h1 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.cartTab .btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    bottom: 0;
+}
+
+.cartTab .btn button {
+    background-color: #449A00;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cartTab .btn .close {
+    background-color: #eee;
+}
+
+.cartTab .listCart .item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.cartTab .listCart .item img {
+    width: 100%;
+}
+
+.listCart .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.listCart .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+}
+
+.listCart .item:nth-child(even) {
+    background-color: #3d3d3d; 
+}
+
+.listCart {
+    overflow: auto;
+}
+
+.listCart::-webkit-scrollbar {
+    width: 0;
+}
+
+.heading{
+    font-size: 44.55;
+    margin-left: 100px;
+}
+
+.Hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px;
+    margin-right: 700px;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.heroP {
+    height: 48px;
+    width: 463px;
+    color: #747474;
+}
+.infoHead{
+    text-align: center;
+}
+
+
+/*NavBar CSS Items*/
+.Navbar {
+    background-color: #2D452B; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    height: 50px; 
+}
+
+.navLinks {
+    display: flex;
+    gap: 20px; 
+}
+
+.navLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+    color: #4CAF4F; 
+}
+
+/*enroll-btn: I faced a lot of challenges making this button. I was helped by Mr. Mathews and hover freatures were helped by youtube and ChatGpt*/
+.enroll-btn {
+    background-color: #4CAF4F; 
+    border: none;
+    padding: 10px ;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.enroll-btn a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.enroll-btn:hover {
+    background-color: #45a049; 
+}
+
+.infoHead{
+    margin-top: 50px;
+}
+
+.infoSection {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.blockContainer {
+    display: flex;
+    justify-content: space-around; 
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.block {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.block:hover {
+    transform: translateY(-10px); /*https://youtu.be/oNYHENW-9ig?si=568LX-eE4QYkeMDn - Youtube Assisted me*/
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.blockimg {
+    height: auto;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #2D452B;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #666;
+}
+
+.Navbar {
+    background-color: #2D452B;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 65px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3dbd41;
+}
+
+.enroll-btn {
+    background-color: #4CAF4F;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.enroll-btn:hover {
+    background-color: #559458;
+}
+
+.AvailableCourses{
+    align-items: center;
+    margin: 100px;
+    margin-right: 700px;
+}
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footerSection {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footerSection h3 {
+    color: #006e1a;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footerSection ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footerSection ul li {
+    margin-bottom: 10px;
+}
+
+.footerSection ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footerSection ul li a:hover {
+    color: #006e1a;
+}
+
+.contact-hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.contact-hero h1 {
+    font-size: 2.5rem;
+    color: #2D452B;
+}
+
+.contact-hero p {
+    font-size: 1.2rem;
+    color: #747474;
+}
+
+.contact-info {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.info-block p {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    color: #2D452B;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.submit-btn {
+    background-color: #4CAF4F;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+

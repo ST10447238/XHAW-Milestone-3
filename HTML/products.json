@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "First Aid",
+        "price": "1500",
+        "image": "../image/FirstAid.png"
+    },
+    {
+        "id": 2,
+        "name": "Life Skills",
+        "price": "1500",
+        "image": "../image/LifeSkills.png"
+    },
+    {
+        "id": 3,
+        "name": "Sewing",
+        "price": "1500",
+        "image": "../image/Sewing.png" 
+    },
+    {
+        "id": 4,
+        "name": "Landscaping",
+        "price": "1500",
+        "image": "../image/Landscaping.png"
+    },
+    {
+        "id": 5,
+        "name": "Child Minding",
+        "price": "750",
+        "image": "../image/ChildMinding.png"
+    },
+    {
+        "id": 6,
+        "name": "Garden Maintenance",
+        "price": "750",
+        "image": "../image/GardenMaintenance.png"
+    },
+    {
+        "id": 7,
+        "name": "Cooking",
+        "price": "750",
+        "image": "../image/Cooking.png"
+    }
+]
